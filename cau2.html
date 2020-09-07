@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mang</title>
+</head>
+<body>
+<script>
+
+    function funIndex(num, arr) {
+        let index = -1;
+        for (let i = 0; i < arr.length; i++) {
+            if (num == arr[i]) {
+                return index = i;
+            }
+        }
+        if (index != -1) {
+            return index;
+        } else {
+            return (num + " " +'khong nam trong mang');
+        }
+    }
+
+    let array = [12, 34, 56, -666, 888];
+    let number = prompt('nhap so bat ky');
+    document.write(funIndex(number, array));
+</script>
+</body>
+</html>
